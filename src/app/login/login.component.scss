@@ -1,0 +1,103 @@
+// Start Login Screen Styles
+// First Reset default browser styles
+
+
+.login-screen{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/images/login-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-form{
+        width: 70%;
+        height: 80%;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 0px 2px 4px #ddd;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left-part{
+            width: 50%;
+            height: 100%;
+            background-image: url('../../assets/images/login-art.jpg');
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: center center;
+            border-right: 1px solid #ddd;
+        }
+
+        .right-part{
+            width: 50%;
+            height: 100%;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            form{
+                width: 100%;
+
+                .login-logo{
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 12px;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                h3{
+                    text-align: center;
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                    color:#333;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 15px;
+                    color:#7d7d7d;
+                    text-align: center;
+                    margin-bottom: 24px;
+                }
+
+                .input-group{
+                    width: 100%;
+                    margin-bottom: 12px;
+
+                    input{
+                        width: 100%;
+                        padding: 15px 0;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid #002458;
+                    }
+                }
+
+                .submit-action{
+                    margin-top: 42px;
+
+                    button{
+                        padding: 15px;
+                        background-color: #002458;
+                        color:#fff;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        width: 100%;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
