@@ -2,17 +2,27 @@
     <div class="login-form">
         <div class="left-part"></div>
         <div class="right-part">
-            <form>
+            <form [formGroup]="loginForm" (ngSubmit)="loginFn()">
                 <div class="login-logo">
                     <img src="../../assets/images/login-lock.jpg"/>
                 </div>
                 <h3>Login Account</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <div class="input-group">
-                    <input type="text" placeholder="Enter Username" class="form-control" />
+                    <input 
+                        type="text" 
+                        placeholder="Enter Username" 
+                        class="form-control" 
+                        formControlName="username"
+                    />
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Enter Password" class="form-control" />
+                    <input 
+                        type="password" 
+                        placeholder="Enter Password" 
+                        class="form-control"
+                        formControlName="password"
+                    />
                 </div>
                 <div class="submit-action">
                     <button type="submit" class="submit-btn">Login</button>

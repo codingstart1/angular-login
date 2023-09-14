@@ -4,19 +4,19 @@
     </header>
     <div class="profile-content">
         <div class="profile-card">
-            <h3>User Full Name</h3>
+            <h3>{{userData.firstName}} {{userData.lastName}}</h3>
             <div class="user-meta">
                 <p>
                     <span>Username</span>
-                    <span>test-user-name</span>
+                    <span>{{userData.username}}</span>
                 </p>
                 <p>
                     <span>Email</span>
-                    <span>test@test.com</span>
+                    <span>{{userData.email}}</span>
                 </p>
                 <p>
                     <span>Gender</span>
-                    <span>Male/Female</span>
+                    <span>{{userData.gender}}</span>
                 </p>
             </div>
             <div class="logout">
